@@ -1,0 +1,18 @@
+{
+  "libraryName": "Nexus Knowledge Core",
+  "version": "0.1.0",
+  "generatedAt": "2026-06-18T19:33:25.743Z",
+  "items": [
+    {
+      "id": "risk_test",
+      "type": "risk",
+      "title": "Test Risk",
+      "path": "data/risk_families/risk_test.json",
+      "topic": "test",
+      "sourceIds": [
+        "src_test"
+      ],
+      "status": "active"
+    }
+  ]
+}
