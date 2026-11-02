@@ -1,0 +1,1 @@
+QR Code generator by Kazuhiko Arase, Copyright (c) 2009, licensed under MIT. https://www.opensource.org/licenses/mit-license.php
