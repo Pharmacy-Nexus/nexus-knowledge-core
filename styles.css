@@ -56,3 +56,9 @@
   .vault-overlay{padding:8px}
   .vault-modal{height:92vh;border-radius:12px}
 }
+
+/* v1.4.1 — accessible PDF preview fallback for mobile browsers */
+.vault-pdf-fallback{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;text-align:center;padding:28px;max-width:450px;}
+.vault-pdf-fallback p{color:#36535c;line-height:1.75;font-size:14px;margin:0;}
+.vault-pdf-symbol{border-radius:16px;background:#e1eff0;color:#075f64;font-weight:800;letter-spacing:1px;padding:20px 22px;}
+.vault-pdf-fallback .btn{min-height:44px;min-width:210px;justify-content:center;}
