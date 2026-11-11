@@ -62,3 +62,10 @@
 .vault-pdf-fallback p{color:#36535c;line-height:1.75;font-size:14px;margin:0;}
 .vault-pdf-symbol{border-radius:16px;background:#e1eff0;color:#075f64;font-weight:800;letter-spacing:1px;padding:20px 22px;}
 .vault-pdf-fallback .btn{min-height:44px;min-width:210px;justify-content:center;}
+
+/* v1.4.2 — reliable private image preview on Safari / installed PWA */
+.vault-image-preview{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;width:100%;height:100%;min-height:0;padding:14px;box-sizing:border-box}
+.vault-modal-content .vault-image-preview img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100% - 72px);min-height:0;object-fit:contain;border-radius:6px}
+.vault-image-status{margin:0;color:#344f59;font-size:13px;text-align:center}
+.vault-image-status:empty{display:none}
+.vault-image-open{flex-shrink:0;max-width:100%}
