@@ -24,3 +24,35 @@
 .emergency-value{white-space:pre-line;overflow-wrap:anywhere}
 @media(max-width:720px){.medical-section{padding:18px 15px}.medical-section-head{gap:11px;margin-bottom:17px}.medical-section-copy h3{font-size:16px}.med-entry{padding:8px;gap:6px}.med-entry-num{min-width:18px}.med-save-bar{bottom:calc(68px + env(safe-area-inset-bottom, 0px))}}
 @media(min-width:721px){.med-save-bar{bottom:16px}}
+
+/* VITAL v1.4 -- Medical Vault (private documents, no public QR access) */
+.mobile-nav{grid-template-columns:repeat(5,minmax(0,1fr))}
+.mobile-nav button span{max-width:100%;line-height:1.15;text-align:center;overflow-wrap:anywhere}
+.vault-stack{max-width:1050px}
+.vault-form .section-head h2{display:flex;align-items:center;gap:9px}
+.vault-file-input{padding:12px;background:#f9fcfc;min-width:0;width:100%}
+.vault-file-input::file-selector-button{border:1px solid #c7dfdc;background:#e9f7f4;color:#0b6a64;border-radius:9px;padding:8px 12px;margin-inline-end:12px;cursor:pointer}
+.vault-filter{max-width:190px;padding:9px;min-height:40px;font-size:12px}
+.vault-doc-list{display:grid;gap:10px}
+.vault-doc{display:flex;align-items:flex-start;gap:13px;padding:15px 2px;border-bottom:1px solid var(--line);min-width:0}
+.vault-doc:last-child{border-bottom:0}
+.vault-doc-icon{width:40px;height:40px;flex-shrink:0;display:grid;place-items:center;color:#0a887e;border-radius:12px;background:#eaf8f4}
+.vault-doc-body{flex:1;min-width:0}
+.vault-doc-body strong{display:block;overflow-wrap:anywhere;font-size:14px;line-height:1.5}
+.vault-doc-meta{color:var(--sub);font-size:11px;margin-top:5px}
+.vault-doc-actions{display:flex;flex-wrap:wrap;gap:5px;justify-content:flex-end;max-width:245px}
+.vault-doc-actions .btn{font-size:11px;padding:7px 10px;min-height:35px}
+.vault-overlay{position:fixed;inset:0;z-index:700;display:flex;justify-content:center;align-items:center;background:rgba(7,27,36,.82);padding:20px}
+.vault-modal{width:min(960px,100%);height:min(88vh,900px);display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:#fff}
+.vault-modal-head{padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+.vault-modal-head strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vault-modal-content{flex:1;min-height:0;display:grid;place-items:center;background:#eef3f4}
+.vault-modal-content iframe,.vault-modal-content img{width:100%;height:100%;border:0;object-fit:contain}
+@media(max-width:720px){
+  .mobile-nav button{font-size:9px;padding:5px 1px;gap:4px;min-width:0}
+  .vault-doc{flex-wrap:wrap}
+  .vault-doc-actions{width:100%;max-width:none;justify-content:flex-start;padding-inline-start:53px}
+  .vault-filter{max-width:148px}
+  .vault-overlay{padding:8px}
+  .vault-modal{height:92vh;border-radius:12px}
+}
