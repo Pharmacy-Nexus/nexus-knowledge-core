@@ -69,3 +69,17 @@
 .vault-image-status{margin:0;color:#344f59;font-size:13px;text-align:center}
 .vault-image-status:empty{display:none}
 .vault-image-open{flex-shrink:0;max-width:100%}
+
+
+/* VITAL v1.5 Family Profiles: private member records, no public device route */
+.mobile-nav{grid-template-columns:repeat(6,minmax(0,1fr))}
+.family-stack{max-width:1080px}
+.family-toolbar{display:flex;justify-content:flex-start}
+.family-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:15px}
+.family-card{display:flex;flex-direction:column;align-items:flex-start;gap:11px}
+.family-card .btn-group{margin-top:auto}
+.family-avatar{height:54px;width:54px;display:grid;place-items:center;background:linear-gradient(130deg,#0b726f,#0b3548);border-radius:16px;color:#fff;font-size:23px;font-weight:800}
+.family-name{color:#14343b;font-weight:800;font-size:19px;overflow-wrap:anywhere}
+.family-attestation{display:flex;align-items:flex-start;gap:13px;font-size:14px;line-height:1.7;cursor:pointer}
+.family-attestation input{margin-top:7px;width:18px;height:18px;flex-shrink:0;accent-color:#008b80}
+@media(max-width:720px){.mobile-nav button{font-size:9px;padding:5px 0;gap:3px}.mobile-nav button svg{height:18px;width:18px}.family-card{padding:17px}}
