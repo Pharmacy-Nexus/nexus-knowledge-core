@@ -83,3 +83,13 @@
 .family-attestation{display:flex;align-items:flex-start;gap:13px;font-size:14px;line-height:1.7;cursor:pointer}
 .family-attestation input{margin-top:7px;width:18px;height:18px;flex-shrink:0;accent-color:#008b80}
 @media(max-width:720px){.mobile-nav button{font-size:9px;padding:5px 0;gap:3px}.mobile-nav button svg{height:18px;width:18px}.family-card{padding:17px}}
+
+/* v1.6 — Guardian-controlled digital family emergency links */
+.family-emergency-qr{display:flex;align-items:center;flex-direction:column;gap:12px;padding:18px 8px 12px}
+.family-emergency-qr svg{display:block;width:min(250px,78vw);height:auto;aspect-ratio:1;background:#fff;padding:12px;border:1px solid #e4ebed;border-radius:16px}
+.family-emergency-qr .url-text{font-size:11px;overflow-wrap:anywhere;max-width:100%;text-align:center;color:var(--sub)}
+.family-stack .share-row{min-height:66px}
+.family-stack #family-emergency-form .btn-group{display:flex;flex-wrap:wrap;gap:10px}
+.family-card .btn-group{flex-wrap:wrap}
+.family-emergency-qr + .btn-group{justify-content:center;flex-wrap:wrap}
+@media(max-width:720px){.family-emergency-qr{padding:12px 0}.family-emergency-qr svg{width:min(240px,76vw)}.family-stack #family-emergency-form .btn{flex:1 1 150px}}
