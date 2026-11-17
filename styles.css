@@ -93,3 +93,23 @@
 .family-card .btn-group{flex-wrap:wrap}
 .family-emergency-qr + .btn-group{justify-content:center;flex-wrap:wrap}
 @media(max-width:720px){.family-emergency-qr{padding:12px 0}.family-emergency-qr svg{width:min(240px,76vw)}.family-stack #family-emergency-form .btn{flex:1 1 150px}}
+
+/* VITAL v1.7 demo-device management (mobile-first, no new nav tab) */
+.device-section{margin-top:26px}
+.device-section>.page-intro{margin-bottom:0}
+.demo-device-list{display:grid;gap:12px}
+.demo-device-card{padding:18px}
+.demo-device-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.demo-device-top strong{display:block;font-size:16px;overflow-wrap:anywhere}
+.demo-device-top p{margin:6px 0}
+.demo-device-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.demo-device-actions .btn{min-height:38px;padding:7px 11px;font-size:12px}
+.demo-device-qr{display:grid;gap:8px;justify-items:center;text-align:center;margin-top:16px;padding:16px 10px;background:#f5fafa;border-radius:12px;overflow:hidden}
+.demo-device-qr>div{background:#fff;border-radius:8px;padding:10px;width:min(220px,75vw);max-width:100%}
+.demo-device-qr svg{width:100%;height:auto;display:block}
+.demo-device-qr small{font-size:10px;overflow-wrap:anywhere;max-width:100%}
+.demo-device-qr a{color:#087665;overflow-wrap:anywhere}
+.demo-device-toolbar{display:flex;justify-content:flex-end}
+.demo-device-form>.btn{margin-top:12px}
+.demo-device-form>.small{margin:12px 0 0}
+@media(max-width:720px){.demo-device-card{padding:14px}.demo-device-actions .btn{font-size:11px;padding:7px 9px}}

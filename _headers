@@ -10,3 +10,7 @@
 /f/*
   Cache-Control: no-store
   X-Robots-Tag: noindex, nofollow
+
+/d/*
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow
